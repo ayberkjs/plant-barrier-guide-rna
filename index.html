@@ -11,7 +11,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script> 
 	$(function(){
-		$("#geneTable").load("./table/table.html"); 
+		$("#geneTable1").load("./table/table1.html"); 
+	});
+</script>
+<script> 
+	$(function(){
+		$("#geneTable2").load("./table/table2.html"); 
 	});
 </script> 
 </head>
@@ -37,9 +42,9 @@
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- First Parallax Image with Title -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle w3-center" style="white-space:nowrap;">
+  <div class="w3-display-middle w3-center pb-title" style="white-space:wrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GUIDE RNA DESIGN FOR MODULATING</span>
 		<br>
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DROUGHT STRESS-INDUCED PLANT BARRIERS</span>
@@ -64,16 +69,26 @@
 	<p>The website created within the scope of the project presents the findings and methodology in detail, making it accessible to the scientific community and anyone interested. Through this site, we aim to reach wider audiences and increase scientific interaction by sharing the results of our project.</p>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Genes Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxxlarge w3-text-white w3-wide">GENES</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-container w3-padding-48" id="genes">
-	<div id="geneTable"></div>
+<!-- Container (Genes Section) -->
+<div class="w3-container" id="genes">
+	<div class="w3-content w3-padding-top-32">
+		<p>Drought-resistant genes in plants are genes used to enhance drought tolerance. These genes typically act on mechanisms such as increasing water retention capacity, reducing water loss, or enhancing more efficient water usage in plants.</p>
+		<p>Guide RNA (gRNA) is a type of RNA molecule used in CRISPR-Cas systems. This molecule takes on the guiding role necessary for cutting or editing a targeted gene. gRNA binds to the targeted DNA sequence, and then, with the guidance of an enzyme like Cas9, DNA cutting or modification is facilitated. This technology is widely used in genetic editing studies and biotechnology.</p>
+		<p>Below is a table containing some drought-resistant genes found in certain plants and the corresponding guide RNAs created for these genes.</p>
+	</div>
+	<div id="geneTable1"></div>
+	<div class="w3-content w3-padding-top-32">
+		<p>Genes that confer susceptibility to drought can result in reduced adaptation of plants to drought stress or quicker damage. These genes may diminish the plants' ability to retain water, increase water consumption, or provide inadequate response mechanisms to drought stress. Consequently, this scenario can negatively impact the growth and productivity of plants under drought conditions.</p>
+		<p>Below is a table containing some non drought-resistant genes found in certain plants and the corresponding guide RNAs created for these genes.</p>
+	</div>
+	<div id="geneTable2"></div>
 </div>
 
 
